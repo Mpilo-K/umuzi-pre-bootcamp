@@ -11,4 +11,4 @@ sum_listb = sum(listb)
 print(sum_listb)
 
 sum_of_all = sum_lista + sum_listb
-print(sum_of_all)
+print(f"The sume of all multiples of 3 or 5 below 1000 is {sum_of_all}")
