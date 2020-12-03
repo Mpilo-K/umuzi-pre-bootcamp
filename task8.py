@@ -1,10 +1,7 @@
-# Make a function to convert any number into hours and minutes.
-# (For example, 71 will become “1 hour, 11 minutes”; 133 will become “2 hours, 13 minutes”.)
-
-def number_conversion_function(number):
+def number_to_time(number):
     hours = round(number/60)
-    minutes = round(number % 60)
-    return f"{hours} hour(s), {minutes} minutes"
+    minutes = round(number % 60, 2)
+    return f"{hours} hour, {minutes} minutes"
 
 
-print(number_conversion_function(71))
+print(number_to_time(133))

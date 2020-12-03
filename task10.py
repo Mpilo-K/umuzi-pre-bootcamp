@@ -1,9 +1,8 @@
-# Write a function that takes in a string and then prints out all the vowels in the string.
-# Make sure it can deal with capital letters and small letters.
-
-def spelling_fun(string):
+def print_all_vowels(string):
+    vowels = ['a', 'A', 'e', 'E', 'i', 'I' , 'o', 'O', 'u', 'U']
     for character in string:
-        print(character)
+        if character in vowels:
+            print(character)
 
 
-print(spelling_fun("Hello Human!"))
+print(print_all_vowels("There is too many envelopes! I nEEd tO tAkE A brEAk!"))
