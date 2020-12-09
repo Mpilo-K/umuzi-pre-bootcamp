@@ -5,4 +5,4 @@ def print_all_vowels(string):
             print(character)
 
 
-print(print_all_vowels("There is too many envelopes! I nEEd tO tAkE A brEAk!"))
+print_all_vowels("There is too many envelopes! I nEEd tO tAkE A brEAk!")

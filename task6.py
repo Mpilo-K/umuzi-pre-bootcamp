@@ -16,16 +16,13 @@ print(maximum_number(4, 5, 9))
 
 # Bonus: How can you change the code so it can take in any number of numbers?
 # The second function
-def maximum_number2(list_of_numbers):
-    list_numbers2 = list()
-    for num in list_of_numbers:
-        list_numbers2.append(num)
-    max_number2 = list_numbers2[0]
-    for num in list_numbers2:
+def maximum_number2(*nums):
+    max_number2 = nums[0]
+    for num in nums:
         if num > max_number2:
             max_number2 = num
     return max_number2
 
 
-numbers = [39, 5, 7, 8, 90, 12, 6]
-print(maximum_number2(numbers))
+print(maximum_number2(1, 2, 3, 4, 5, 6, 7))
+print(maximum_number2(344, 2, 455, 32, 111, 9))

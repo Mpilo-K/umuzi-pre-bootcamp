@@ -15,4 +15,4 @@ def number_to_time(number):
     return time2
 
 
-print(number_to_time(33))
+print(number_to_time(5))
