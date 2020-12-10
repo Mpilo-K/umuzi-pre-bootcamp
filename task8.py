@@ -1,18 +1,21 @@
 def number_to_time(number):
     if number < 60:
         hours = 0
+        time1 = str(hours) + ' hours, '
     elif number >= 60:
         hours = round(number/60)
-    if hours <= 1:
+    if hours == 1:
         time1 = str(hours) + ' hour, '
     elif hours > 1:
         time1 = str(hours) + ' hours, '
     minutes = round(number % 60, 2)
-    if minutes <= 1:
+    if minutes == 1:
         time2 = time1 + str(minutes) + ' minute'
+    if minutes < 1:
+        time2 = time1 + str(minutes) + ' minutes'
     elif minutes > 1:
         time2 = time1 + str(minutes) + ' minutes'
     return time2
 
 
-print(number_to_time(5))
+print(number_to_time(0))
